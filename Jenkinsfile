@@ -11,7 +11,10 @@ pipeline {
                 script{
                     subscriptiondev = 'KarthikMLSubscription'
                     bat 'az login'
-                    bat 'az account set --subscription ${subscriptiondev}'
+                    bat 'az account set --subscription KarthikMLSubscription'
+                    bat 'az config set extension.use_dynamic_install=yes_without_prompt'
+                    bat 'az extension add --name datafactory'
+                    bat 'az datafactory list'
                 }
             }
         }
