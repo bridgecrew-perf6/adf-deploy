@@ -5,11 +5,12 @@
         "annotations": [],
         "type": "AzureBlobFS",
         "typeProperties": {
-            "url": "https://strgedev.dfs.core.windows.net",
-            "encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI5NzAyODhiYi1hNTU3LTQ4YzQtODk2NC1lNTk3MTkxMzc3MjMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+            "url": "https://strgeqa.dfs.core.windows.net"
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJlYzk1MzY2ZC01ZWNjLTQwZDctYjNjYi0xOGQzN2M5ZTMxZjkiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+
         },
         "connectVia": {
-            "referenceName": "shir-karthik",
+            "referenceName": "integrationRuntime2",
             "type": "IntegrationRuntimeReference"
         }
     }
