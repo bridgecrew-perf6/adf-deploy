@@ -10,12 +10,12 @@ pipeline {
             steps {
                 script{
                     subscriptiondev = 'KarthikMLSubscription'
-                    ps 'az login'
-                    ps 'az account set --subscription KarthikMLSubscription'
-                    ps 'az config set extension.use_dynamic_install=yes_without_prompt'
-                    ps 'az extension add --name datafactory'
-                    ps 'az datafactory list'
-                    ps 'Set-AzDataFactoryV2LinkedService -ResourceGroupName "Datafactory-QA" -DataFactoryName "adf-karthik-qa" -Name "adls1_test" -File "C:\\Users\\karthikroopa\\Downloads\\Copy_pl_support_live\\linkedService\\adls2.json" | Format-List'
+                    powershell 'az login'
+                    powershell 'az account set --subscription KarthikMLSubscription'
+                    powershell 'az config set extension.use_dynamic_install=yes_without_prompt'
+                    powershell 'az extension add --name datafactory'
+                    powershell 'az datafactory list'
+                    powershell 'Set-AzDataFactoryV2LinkedService -ResourceGroupName "Datafactory-QA" -DataFactoryName "adf-karthik-qa" -Name "adls1_test" -File "C:\\Users\\karthikroopa\\Downloads\\Copy_pl_support_live\\linkedService\\adls2.json" | Format-List'
                 }
             }
         }
