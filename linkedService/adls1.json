@@ -5,7 +5,7 @@
         "annotations": [],
         "type": "AzureBlobFS",
         "typeProperties": {
-            "url": "https://strgeqa.dfs.core.windows.net"
+            "url": "https://strgeqa.dfs.core.windows.net",
 			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJlYzk1MzY2ZC01ZWNjLTQwZDctYjNjYi0xOGQzN2M5ZTMxZjkiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 
         },
