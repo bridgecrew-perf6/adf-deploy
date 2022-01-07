@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Test') {
+        stage('Git Checkout') {
             steps {
-                echo 'Testing..'
+                git 'https://github.com/karthik-1990/adf-deploy'
             }
         }
         stage('Deploy') {
