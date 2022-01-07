@@ -12,6 +12,7 @@ pipeline {
                     sh """#!/bin/bash
                     echo "Loggin into Azure Account"
                     az login
+                    """
                 }
             }
         }
