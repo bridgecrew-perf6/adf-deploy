@@ -9,7 +9,9 @@ pipeline {
         stage('Deploy code to QA env') {
             steps {
                 script{
+                    subscriptiondev = 'KarthikMLSubscription'
                     bat 'az login'
+                    bat 'az account set --subscription ${subscriptiondev}'
                 }
             }
         }
