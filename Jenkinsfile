@@ -6,9 +6,13 @@ pipeline {
                 git 'https://github.com/karthik-1990/adf-deploy'
             }
         }
-        stage('Deploy') {
+        stage('Deploy code to QA env') {
             steps {
-                echo 'Deploying....'
+                script{
+                    sh """#!/bin/bash
+                    echo "Loggin into Azure Account"
+                    az login
+                }
             }
         }
     }
