@@ -10,13 +10,12 @@ pipeline {
             steps {
                 script{
                     subscriptiondev = 'KarthikMLSubscription'
-                    bat 'az login'
-                    bat 'az account set --subscription KarthikMLSubscription'
-                    bat 'az config set extension.use_dynamic_install=yes_without_prompt'
-                    bat 'az extension add --name datafactory'
-                    bat 'az datafactory list'
-                    bat 'cd /Users/karthikroopa/.jenkins/workspace/ADF_JSON_Template/pipeline'
-                    bat 'az datafactory pipeline create --resource-group Datafactory-QA --factory-name adf-karthik-qa --name ADF_Test --pipeline @C:/Users/karthikroopa/.jenkins/workspace/ADF_JSON_Template/pipeline/Copy_pl.json'
+                    ps 'az login'
+                    ps 'az account set --subscription KarthikMLSubscription'
+                    ps 'az config set extension.use_dynamic_install=yes_without_prompt'
+                    ps 'az extension add --name datafactory'
+                    ps 'az datafactory list'
+                    ps 'Set-AzDataFactoryV2LinkedService -ResourceGroupName "Datafactory-QA" -DataFactoryName "adf-karthik-qa" -Name "adls1_test" -File "C:\\Users\\karthikroopa\\Downloads\\Copy_pl_support_live\\linkedService\\adls2.json" | Format-List'
                 }
             }
         }
