@@ -15,8 +15,8 @@ pipeline {
                     bat 'az config set extension.use_dynamic_install=yes_without_prompt'
                     bat 'az extension add --name datafactory'
                     bat 'az datafactory list'
-                    bat 'cd C:/Users/karthikroopa/.jenkins/workspace/ADF_JSON_Template/pipeline'
-                    bat 'az datafactory pipeline create --resource-group Datafactory-QA --factory-name adf-karthik-qa --name ADF_Test --pipeline @Copy_pl.json'
+                    bat 'cd /Users/karthikroopa/.jenkins/workspace/ADF_JSON_Template/pipeline'
+                    bat 'az datafactory pipeline create --resource-group Datafactory-QA --factory-name adf-karthik-qa --name ADF_Test --pipeline @C:/Users/karthikroopa/.jenkins/workspace/ADF_JSON_Template/pipeline/Copy_pl.json'
                 }
             }
         }
