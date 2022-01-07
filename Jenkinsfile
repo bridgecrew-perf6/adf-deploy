@@ -5,7 +5,7 @@ pipeline {
         stage('Check Out SCM') {
             steps {
                 scripts{
-                    checkout scm
+                    git credentialsId: 'karthik-1990', url: 'https://github.com/karthik-1990/adf-deploy.git'
                 }
                 
             }
