@@ -9,7 +9,7 @@ pipeline {
         stage('Deploy code to QA env') {
             steps {
                 script{
-                    sh 'az login'
+                    bat 'az login'
                 }
             }
         }
