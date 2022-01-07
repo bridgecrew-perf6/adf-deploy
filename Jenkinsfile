@@ -9,9 +9,7 @@ pipeline {
         stage('Deploy code to QA env') {
             steps {
                 script{
-                    sh """#!/bin/bash
-                    echo "Loggin into Azure Account"
-                    """
+                    sh 'az login'
                 }
             }
         }
