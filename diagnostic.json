@@ -1,0 +1,22 @@
+{
+    "now": "2022-01-07T12:29:28.506Z",
+    "perfNow": 2378540.5,
+    "diagnosticCorrelation": "8aa77ffe-6883-4b65-928c-657bc5202905",
+    "source": "DownloadSupportFiles",
+    "environment": {
+        "productName": "adf",
+        "buildVersion": "1.0.20220107.11",
+        "environmentType": 3,
+        "resourceName": "adf-dev-karthik",
+        "resourceRegion": "eastus2",
+        "resourceGroup": "Datafactory-Dev",
+        "subscriptionId": "c66fcfb4-2f05-42f0-aa71-13c5bfb3c4cc",
+        "sessionId": "PQ4Ca",
+        "operationId": "omYU8",
+        "gitType": "live"
+    },
+    "additionalInfo": {
+        "selectedResource": "Copy_pl",
+        "selectedResourceType": "pipeline"
+    }
+}

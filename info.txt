@@ -1,0 +1,6 @@
+selected resource name:		Copy_pl
+selected resource type:		pipeline
+factory name:			adf-dev-karthik
+factory location:		eastus2
+subscription id:		c66fcfb4-2f05-42f0-aa71-13c5bfb3c4cc
+time of download (UTC):		Fri, 07 Jan 2022 12:29:28 GMT
